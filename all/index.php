@@ -9,7 +9,7 @@
   <div>
     <ul>
        <? require_once'../admin.php';
-          $sql = "select * from cms_notice ORDER BY topid DESC,stime DESC,id DESC";
+          $sql = "select * from 数据库表 ORDER BY topid DESC,stime DESC,id DESC";//早起预留，未做后期的更改
           $result = $conn -> query($sql);
 			if ($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()){

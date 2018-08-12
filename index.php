@@ -9,7 +9,7 @@
   <div>
     <ul>
        <? require_once'admin.php';
-          $sql = "select * from cms_notice where stime<= NOW() and etime >= NOW() or etime is null ORDER BY topid DESC,stime DESC,id DESC";
+          $sql = "select * from 数据库表 where stime<= NOW() and etime >= NOW() or etime is null ORDER BY topid DESC,stime DESC,id DESC";//根据时间筛选并且根据条件排序
           $result = $conn -> query($sql);
 			if ($result->num_rows > 0) {
 				while($row = $result->fetch_assoc()){

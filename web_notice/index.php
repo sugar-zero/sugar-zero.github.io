@@ -8,7 +8,7 @@ header("status: 404 Not Found");
 require_once'../admin.php';
 
 $uid=$_GET['id'];
-$sql = "select * from cms_notice where id = $uid";
+$sql = "select * from 数据库表 where id = $uid";//具体显示根据获得ID
 $result = $conn -> query($sql);
 ?>
 <meta charset='utf-8'>
@@ -21,7 +21,7 @@ $result = $conn -> query($sql);
   <?php 
   $l=$row['licence'];
   $hl=$row['highlight'];
-  if($l == -1 || $l =='null'){
+  if($l == -1 || $l =='null'){//这里是根据数据库配置的是否可读判断，非可读则404
   	header('HTTP/2 404 Not Found ');
 	header("status: 404 Not Found ");
   }else{?>
