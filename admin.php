@@ -1,10 +1,10 @@
 <?php
-// ´´½¨Êý¾Ý¿âÁ¬½Ó
+// åˆ›å»ºæ•°æ®åº“è¿žæŽ¥
 $servername="localhost";
-$username="Êý¾Ý¿âÃû";
-$password="Êý¾Ý¿âÃÜÂë";
-$testgame="Êý¾Ý¿â±í";
+$username="æ•°æ®åº“å";
+$password="æ•°æ®åº“å¯†ç ";
+$testgame="æ•°æ®åº“è¡¨";
 
-$conn = new mysqli($servername,$username,$password,$testgame);//·Çphp°Ñmysqli¸ÄÎªmysql
+$conn = new mysqli($servername,$username,$password,$testgame);//éžphp7.0+æŠŠmysqliæ”¹ä¸ºmysql7
 mysqli_query($conn,'set names utf8');
 ?>
